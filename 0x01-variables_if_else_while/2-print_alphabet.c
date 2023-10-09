@@ -14,4 +14,3 @@ for (i = 'a'; i <= 'z'; i++)
 putchar('\n');
 return (0);
 }
-	
