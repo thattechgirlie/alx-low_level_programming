@@ -2,7 +2,7 @@
 #include <stdio.h>
 
 /**
- * is_digit - check the code
+ * _isdigit - check the code
  * @c: check parameter
  * Return: returns 1 or 0.
  */
