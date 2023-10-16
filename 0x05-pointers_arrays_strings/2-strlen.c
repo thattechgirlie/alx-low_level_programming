@@ -3,7 +3,7 @@
 
 /**
  * _strlen - check the code
- *@s: check parameter
+ * @s: check parameter
  * Return: returns count 
  */
 int _strlen(char *s)
@@ -13,7 +13,7 @@ int count = 0;
 
 for (a = 0; s[a] != '\0' ; a++)
 {
-	count ++;
+	count++;
 }
 return (count);
 }
