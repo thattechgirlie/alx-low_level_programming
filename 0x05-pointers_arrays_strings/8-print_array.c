@@ -15,8 +15,7 @@ for (y = 0; y < n; y++)
 	printf("%d", a[y]);
 	if (y < n - 1)
 	{
-		printf(". ");
+		printf(", ");
 	}
-	printf("\n");
 }
 }
