@@ -11,7 +11,7 @@ int a;
 
 for (a = 0; str[a] != '\0'; a++)
 {
-	printf(str[a]);
+	putchar(str[a]);
 }
-printf("\n");
+putchar('\n');
 }
