@@ -17,6 +17,5 @@ for (y = 0; y < n; y++)
 	{
 		printf(", ");
 	}
-	printf("\n");
 }
 }
