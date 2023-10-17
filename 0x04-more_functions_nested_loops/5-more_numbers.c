@@ -4,7 +4,7 @@
 /**
  * more_numbers - check the code
  *
- * Return: Always 0.
+ * Return: returns void
  */
 void more_numbers(void)
 {
@@ -21,4 +21,5 @@ for (a = 0; a < 10; a++)
 	}
 	putchar('\n');
 }
+putchar('\n');
 }
