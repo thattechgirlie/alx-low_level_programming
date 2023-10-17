@@ -4,7 +4,7 @@
 /**
  * _strlen - check the code
  * @s: check parameter
- * Return: returns count 
+ * Return: returns count
  */
 int _strlen(char *s)
 {
