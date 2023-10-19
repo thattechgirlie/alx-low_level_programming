@@ -18,6 +18,5 @@ for (y = 0; y < n && *src != '\0'; y++)
 	src++;
 }
 dest[len + y] = '\0';
-putchar('\n');
 return (dest);
 }
