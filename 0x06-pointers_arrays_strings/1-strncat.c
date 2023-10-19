@@ -1,6 +1,5 @@
 #include <stdio.h>
 #include "main.h"
-#include <string.h>
 /**
  * _strncat - check the code
  * @dest: check parameter
