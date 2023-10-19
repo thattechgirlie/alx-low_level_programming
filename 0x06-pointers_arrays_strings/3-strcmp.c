@@ -11,14 +11,11 @@ int a;
 
 for (a = 0; s1[a] != '\0' || s2[a] != '\0'; a++)
 {
-	if (s1[a] < s2[a])
+	if (s1[a] !=  s2[a])
 	{
 		return (s1[a] - s2[a]);
 	}
-	else
-	{
-		return (s2[a] - s1[a]);
-	}
+	
 }	
 return (0);
 }
