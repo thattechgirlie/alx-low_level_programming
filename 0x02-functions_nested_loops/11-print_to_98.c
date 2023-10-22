@@ -15,8 +15,9 @@ if (n >= 0 && n <= 98)
 	{
 		printf("%d", y);
 		if (y != 98)
-			printf(", \n");
+			printf(", ");
 	}
+	printf("\n");
 }
 else if (n < 0)
 {
