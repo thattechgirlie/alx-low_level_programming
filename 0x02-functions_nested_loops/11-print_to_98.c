@@ -29,7 +29,7 @@ else if (n > 98)
 {
 	for (y = n; y >= 98; y--)
 	{
-		printf("%d");
+		printf("%d", y);
 	}
 	printf("\n");
 }
