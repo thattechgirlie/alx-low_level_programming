@@ -6,7 +6,7 @@
  * Return: Always 0 (Success)
  */
 int main(void)
-{       
+{
 putchar('_');
 putchar('p');
 putchar('u');
