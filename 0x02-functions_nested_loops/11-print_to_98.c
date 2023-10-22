@@ -15,11 +15,8 @@ if (n >= 0 && n <= 98)
 	{
 		printf("%d", y);
 		if (y != 98)
-		{
-			printf(", ");
-		}
+			printf(", \n");
 	}
-	printf("\n");
 }
 else if (n < 0)
 {
@@ -27,9 +24,7 @@ else if (n < 0)
 	{
 		printf("%d", y);
 		if (y != 98)
-		{
 			printf(", ");
-		}
 	}
 	printf("\n");
 }
@@ -39,9 +34,7 @@ else if (n > 98)
 	{
 		printf("%d", y);
 		if (y != 98)
-		{
 			printf(", ");
-		}
 	}
 	printf("\n");
 }
