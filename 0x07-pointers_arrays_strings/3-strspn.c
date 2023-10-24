@@ -18,7 +18,7 @@ while (*s)
 		if (*s == accept[a])
 		{
 			c++;
-		       	break;
+			break;
 		}
 		else if (accept[a + 1] == '\0')
 		{
