@@ -14,6 +14,7 @@ for (x = 0; x < 8; x++)
 	for (y = 0; y < 8; y++)
 	{
 		putchar(a[x][y]);
+		putchar('\n');
 	}
 }
 }
