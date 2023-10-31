@@ -27,7 +27,7 @@ for (b = 0; b < height; b++)
 
 	if (a[b] == NULL)
 	{
-		for (;b >= 0; b--)
+		for (; b >= 0; b--)
 			free(a[b]);
 		free(a);
 		return (NULL);
