@@ -19,7 +19,7 @@ if (min > max)
 	return (NULL);
 }
 size = max - min + 1;
-array = malloc(size * sizeof(int));
+array = malloc(size * (sizeof(int)));
 
 if (array == NULL)
 {
@@ -27,7 +27,7 @@ if (array == NULL)
 }
 for (i = 0; min <= max; i++)
 {
-	array[i] = min ++;
+	array[i] = min++;
 }
 return (array);
 }
