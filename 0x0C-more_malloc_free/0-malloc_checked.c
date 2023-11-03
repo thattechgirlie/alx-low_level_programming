@@ -14,8 +14,7 @@ ptr = malloc(b);
 
 if (ptr == NULL)
 {
-	fprintf(stderr, "Memory allocation failed. Exiting...\n");
-	exit(EXIT_FAILURE);
+	exit(98);
 }
 return (ptr);
 }
