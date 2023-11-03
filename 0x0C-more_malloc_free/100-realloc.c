@@ -11,11 +11,10 @@
 
 void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 {
-char *a;
+char *a, *b;
 unsigned int k, l;
 k = new_size;
 l = new_size;
-char *b;
 b = ptr;
 
 if (ptr == NULL)
