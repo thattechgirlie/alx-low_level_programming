@@ -11,9 +11,9 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-int a  = o;
-int b = 0;
-char = *output;
+unsigned int a = 0;
+unsigned int b = 0;
+char = *y;
 
 if (s1 == NULL)
 {
@@ -23,11 +23,10 @@ if (s2 == NULL)
 {
 	s2 = "";
 }
-char *result = (char *)malloc(a + n + 1);
+y = malloc(sizeof(char) * (a + n + 1));
 
-if (result == NULL)
+if (y == NULL)
 {
-	fprintf(stderr, "Memory allocation failed\n");
 	return (NULL);
 }
 }

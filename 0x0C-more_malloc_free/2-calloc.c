@@ -10,13 +10,17 @@
  */
 void *_calloc(unsigned int nmemb, unsigned int size)
 {
+char *d;
+unsigned int u;
+
 if (nmemb == 0 || size == 0)
 	return (NULL);
 
-void *ptr(malloc(nmemb * size))
+d = malloc(nmemb * size);
 
-if (ptr == NULL)
+if (d == NULL)
 	return (NULL);
-memset(ptr, 0, nmemb * size);
-return (ptr);
+for (u = 0; u < (nmemb * size); u++)
+	d[u] = 0;
+return (d);
 }
