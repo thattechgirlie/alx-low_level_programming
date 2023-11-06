@@ -3,7 +3,7 @@
  * main - check the code
  * Return: returns 0
  */
-int main (void)
+int main(void)
 {
 printf("%s\n", __FILE__);
 
