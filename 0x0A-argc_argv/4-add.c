@@ -23,7 +23,7 @@ for (a = 1; argv[a]; a++)
 	b = strtol(argv[a], &flag, 10);
 	if (*flag)
 	{
-		printf("error\n");
+		printf("Error\n");
 		return (1);
 	}
 	else
