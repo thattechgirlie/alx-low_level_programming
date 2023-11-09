@@ -9,7 +9,7 @@
 int main(int argc, char *argv[])
 {
 int a, b, c;
-int change[] = {25, 10, 5, 2};
+int change[] = {25, 10, 5, 2, 1};
 
 if (argc != 2)
 {
