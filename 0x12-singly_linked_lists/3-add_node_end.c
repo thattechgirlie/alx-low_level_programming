@@ -16,6 +16,8 @@ newelement = malloc(sizeof(list_t));
 
 if (newelement == NULL)
 	return (NULL);
+newelement->str = strdup(str);
+
 for (a = 0; str[a] != '\0'; a++)
 	b++;
 newelement->len = b;
