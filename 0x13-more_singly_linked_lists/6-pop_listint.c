@@ -17,5 +17,6 @@ f = (*head)->n;
 e = (*head)->next;
 free(*head);
 *head = e;
+
 return (f);
 }
