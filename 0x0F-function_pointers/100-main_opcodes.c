@@ -1,5 +1,4 @@
 #include <stdio.h>
-#include "function_pointers.h"
 #include <stdlib.h>
 /**
  * main - check the code
@@ -7,9 +6,11 @@
  * @argv: check parameter1
  * Return: returns 0
  */
-int main(int argc, char **argv)
+int main(int argc, char *argv[])
 {
 int a;
+int b;
+char *k;
 
 if (argc != 2)
 {
@@ -23,6 +24,15 @@ if (a < 0)
 	printf("Error\n");
 	exit(2);
 }
-print_opcodes((char *) &main, a);
+k = (char *)main;
+for (b = 0; b < a; b++)
+{
+	if (b == a - 1)
+	{
+		printf("%02hhx\n", k[b]);
+		break;
+	}
+printf("%02hhx", k[b]);
+}
 return (0);
 }
