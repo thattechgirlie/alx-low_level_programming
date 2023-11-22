@@ -1,1 +1,1 @@
-function pointer
+malloc
