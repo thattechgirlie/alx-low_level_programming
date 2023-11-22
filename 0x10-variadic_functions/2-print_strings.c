@@ -15,7 +15,11 @@ va_start(b, n);
 
 if (separator == NULL)
 {
-	separator = "";
+	printf("(nil)");
+}
+else
+{
+	printf("%s", separator);
 }
 for (a = 0; a < n; a++)
 {
