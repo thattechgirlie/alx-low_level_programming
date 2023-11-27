@@ -21,7 +21,7 @@ if (j == -1)
 {
 	return (0);
 }
-task0 = malloc(sizeof(char)*(letters));
+task0 = malloc(sizeof(char) * (letters));
 
 if (task0 == NULL)
 {
