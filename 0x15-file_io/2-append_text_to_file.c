@@ -12,8 +12,14 @@ int rwr;
 
 if (filename == NULL)
 	return (-1);
-if (text_content)
+j = open(filename, O_CREAT | O_WRONLY | O_APPEND);
+
+if (j == -1)
+	return (-1);
+
+if (text_content == NULL)
 {
+	text_content = "";
 
 	for (y = 0; text_content[y]; y++)
 		;
