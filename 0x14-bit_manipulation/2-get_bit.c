@@ -18,6 +18,6 @@ a = 1 << index;
 b = n & a;
 
 if (b == a)
-	return (0);
+	return (1);
 return (0);
 }
