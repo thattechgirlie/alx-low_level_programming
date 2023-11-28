@@ -1,26 +1,22 @@
 #include "main.h"
 /**
- * print_bi - check the code
- * @n: check parameter
+ * int_power - check the code
+ * @h: check parameter
+ * @m: check par1
  * Return: returns void
  */
-void print_bi(unsigned long int n)
+unsigned long int_power(unsigned long int h, unsigned int m)
 {
-if (n == 0)
-{
-	;
-}
-print_bi(n >> 1);
+unsigned long int a = 1;
+unsigned  int b;
 
-if ((n & 1) == 1)
+for (b = 1; b <= m; b++)
 {
-	_putchar('1');
+	a *= h;
 }
-if ((n & 1) == 0)
-{
-	_putchar('0');
+return (a);
 }
-}
+
 /**
  * print_binary - check the code
  * @n: check parameter
@@ -34,6 +30,6 @@ if (n == 0)
 }
 else
 {
-	print_bi(n);
+	_putchar('1');
 }
 }
