@@ -23,7 +23,7 @@ if (j == -1)
 }
 if (text_content == NULL)
 {
-	text_content = " ";
+	text_content = "";
 }
 for (y = 0; text_content[y]; y++)
 	;
@@ -32,5 +32,6 @@ rwr = write(j, text_content, y);
 if (rwr == -1)
 	return (-1);
 close(j);
+
 return (1);
 }
