@@ -17,10 +17,8 @@ j = open(filename, O_CREAT | O_WRONLY | O_APPEND);
 if (j == -1)
 	return (-1);
 
-if (text_content == NULL)
+if (text_content)
 {
-	text_content = "";
-
 	for (y = 0; text_content[y]; y++)
 		;
 	rwr = write(j, text_content, y);
@@ -29,5 +27,6 @@ if (text_content == NULL)
 		return (-1);
 }
 close(j);
+
 return (1);
 }
