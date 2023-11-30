@@ -10,12 +10,12 @@ void error_file(int file_from, int file_to, char *argv[])
 {
 	if (file_from == 1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n", argv[1]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE%s\n", argv[1]);
 		exit(98);
 	}
 	if (file_to == -1)
 	{
-		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE %s\n", argv[2]);
+		dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE%s\n", argv[2]);
 		exit(99);
 	}
 }
@@ -34,7 +34,7 @@ char buff[1024];
 
 if (argc != 3)
 {
-	dprintf(STDERR_FILENO,"%s\n", "Usage: cp file_from file_to");
+	dprintf(STDERR_FILENO, "%s\n", "Usage: cp file_from file_to");
 	exit(97);
 }
 file_from = open(argv[1], O_RDONLY);
@@ -44,19 +44,19 @@ a = 1024;
 while (a == 1024)
 {
 	a = read(file_from, buff, 1024);
-	
+
 	if (a == -1)
 		error_file(-1, 0, argv);
 	b = write(file_to, buff, a);
 
-	if ( b == -1)
+	if (b == -1)
 		error_file(0, -1, argv);
 }
 err_close = close(file_from);
 
 if (err_close == -1)
 {
-	dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE j %d\n", file_from);
+	dprintf(STDERR_FILENO, "Error: Can't read from file NAME_OF_THE_FILE j%d\n", file_from);
 	exit(100);
 }
 return (0);
