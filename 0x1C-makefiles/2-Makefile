@@ -3,6 +3,6 @@ SRC =main.c school.c
 OBJ = $(SRC:.c=.o)
 NAME = schol
 all:
-	@echo "Compliling.."
+	@echo "Compiling.."
 	@$(CC) $(OBJ) -o $(NAME)
 	@echo "Done."
